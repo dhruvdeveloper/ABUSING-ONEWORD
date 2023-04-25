@@ -1,7 +1,6 @@
 {
   "name": "OneWordSpam",
   "description": "Fastest OneWord Spam By @SassyAakash",
-  "logo": "",
   "keywords": [
     "spambot",
     "telegram",
@@ -92,3 +91,4 @@
   },{
     "url": "heroku/python"
   }]
+}
