@@ -1,174 +1,101 @@
 {
   "name": "OneWordSpam",
-  "description": "Fastest One Word Spam By @SassyAakash",
-  "logo" : "https://te.legra.ph/file/c4cc365530c1250af2ad9.jpg",
+  "description": "Fastest OneWord Spam By @SassyAakash",
+  "logo": "",
   "keywords": [
     "spambot",
     "telegram",
     "userbot"
-    "oneword_abuse"
   ],
     "env": {
-
       "API_ID": {
-
         "description": "Your API ID",
-
         "value": "",
-
         "required": true
       },
-
       "API_HASH": {
-
         "description": "Your API HASH",
-
         "value": "",
-
         "required": true
-
       },
-
       "STRING": {
-
         "description": "Telethon String Session",
-
         "value": "",
-
         "required": true
-
       },
-
       "STRING2": {
-
         "description": "Telethon String Session",
-
         "value": "",
-
         "required": false
-
       },
-
       "STRING3": {
-
         "description": "Telethon String Session",
-
         "value": "",
-
         "required": false
-
       },
-
       "STRING4": {
-
         "description": "Telethon String Session",
-
         "value": "",
-
         "required": false
-
       },
-
       "STRING5": {
-
         "description": "Telethon String Session",
-
         "value": "",
-
         "required": false
-
       },
-
       "STRING6": {
-
         "description": "Telethon String Session",
-
         "value": "",
-
         "required": false
-
       },
-
       "STRING7": {
-
         "description": "Telethon String Session",
-
         "value": "",
-
         "required": false
-
       },
-
       "STRING8": {
-
         "description": "Telethon String Session",
-
         "value": "",
-
         "required": false
-
       },
-
       "STRING9": {
-
         "description": "Telethon String Session",
-
         "value": "",
-
         "required": false
-
       },
-
       "STRING10": {
-
         "description": "Telethon String Session",
-
         "value": "",
-
         "required": false
-
       },
-
       "SUDO": {
-
         "description": "Sudo Users Id",
-
         "value": "",
-
         "required": true
-
       }
-
   },
 
   "addons": [{
-
     "plan": "heroku-postgresql",
-
     "options": {
-
       "version": "12"
-
     }
-
   }],
-
   "buildpacks": [{
-
     "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
-
   },{
-
     "url": "https://github.com/heroku/heroku-buildpack-apt.git"
-
   },{
-
     "url": "https://github.com/chrismytton/heroku-buildpack-jq"
-
   },{
-
     "url": "heroku/python"
-
   }]
-
+"formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    },
+    "stack": "container"
+    }
 }
